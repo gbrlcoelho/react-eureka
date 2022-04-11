@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export function Erro(props: {
   errorMessage:
@@ -10,11 +11,12 @@ export function Erro(props: {
     | undefined;
 }) {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Erro na consulta</p>
-        <p>{props.errorMessage}</p>
-      </header>
-    </div>
+    <>
+      <p>Erro na consulta</p>
+      <p>{props.errorMessage}</p>
+      <Link to={"/"}>
+        <button></button>
+      </Link>
+    </>
   );
 }

@@ -1,12 +1,13 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 export function Carregando() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <p>Carregando resultados..</p>
+    <>
+      <p>Carregando resultados..</p>
+      <Link to={"/"}>
         <button>CANCELAR</button>
-      </header>
-    </div>
+      </Link>
+    </>
   );
 }
