@@ -1,4 +1,3 @@
-import React from "react";
 import "./App.css";
 import { Pesquisa } from "./Containers/Pesquisa";
 import { Resultados } from "./Containers/Resultados";
