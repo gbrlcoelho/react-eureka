@@ -6,6 +6,7 @@ export function CEPDados(props: any) {
 		<>
 			{keys.map((key) => (
 				<span key={key}>
+					<br />
 					<b>{key}: </b>
 					{cepDados[key]}
 				</span>
