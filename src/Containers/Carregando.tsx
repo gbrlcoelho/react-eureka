@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { Button, Container, Loader } from "../Styled";
+import { Container, Loader, PrimaryButton } from "../Styled";
 
 export function Carregando() {
 	return (
@@ -9,7 +9,7 @@ export function Carregando() {
 				<Loader style={{ textAlign: "center" }}></Loader>
 				<h3>Carregando resultados..</h3>
 				<Link to={"/"}>
-					<Button>CANCELAR</Button>
+					<PrimaryButton>CANCELAR</PrimaryButton>
 				</Link>
 			</Container>
 		</>

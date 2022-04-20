@@ -3,7 +3,7 @@ import { useNavigate } from "react-router-dom";
 import InputMask from "react-input-mask";
 import consultarCep from "cep-promise";
 import { CEPDados } from "../Components/CEPdados";
-import { Button, Container } from "../Styled";
+import { Container, PrimaryButton, SecundaryButton } from "../Styled";
 interface Error {
 	message: string;
 }
@@ -83,11 +83,16 @@ export function Pesquisa(props: any) {
 						placeholder="00000-000"
 						required
 					/>
-					<Button style={{ marginBottom: "10px" }} onClick={handleSearch}>
+					<PrimaryButton
+						style={{ marginBottom: "10px" }}
+						onClick={handleSearch}
+					>
 						CONSULTAR
-					</Button>
+					</PrimaryButton>
 					<br />
-					<Button onClick={handleFavorite}>SALVAR FAVORITO</Button>
+					<SecundaryButton onClick={handleFavorite}>
+						SALVAR FAVORITO
+					</SecundaryButton>
 					<br />
 					<section>
 						<b>FAVORITO: </b> {cepFavorito}

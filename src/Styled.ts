@@ -11,7 +11,7 @@ export const EurekaHeader = styled.header`
 `;
 
 export const Container = styled.div`
-	padding: 50px;
+	padding: 30px;
 	text-align: center;
 	display: flex;
 	flex-direction: column;
@@ -48,6 +48,25 @@ export const Button = styled.button`
 	:hover {
 		background: #f1c400;
 		border: 2px solid #f1c400;
+	}
+`;
+
+export const SecundaryButton = styled(Button)`
+	:hover {
+		background: #fff;
+		color: #282c34;
+		border: 2px solid #fff;
+	}
+`;
+
+export const PrimaryButton = styled(Button)`
+	background: #f1c400;
+	border: 2px solid #f1c400;
+	color: #282c34;
+	:hover {
+		background: #ffd000;
+		border: 2px solid #ffd000;
+		color: #fff;
 	}
 `;
 
