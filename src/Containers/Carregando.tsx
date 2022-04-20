@@ -1,13 +1,17 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Button, Container, Loader } from "../Styled";
 
 export function Carregando() {
-  return (
-    <>
-      <p>Carregando resultados..</p>
-      <Link to={"/"}>
-        <button>CANCELAR</button>
-      </Link>
-    </>
-  );
+	return (
+		<>
+			<Container>
+				<Loader style={{ textAlign: "center" }}></Loader>
+				<h3>Carregando resultados..</h3>
+				<Link to={"/"}>
+					<Button>CANCELAR</Button>
+				</Link>
+			</Container>
+		</>
+	);
 }

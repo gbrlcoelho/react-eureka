@@ -3,6 +3,7 @@ import { useNavigate } from "react-router-dom";
 import InputMask from "react-input-mask";
 import consultarCep from "cep-promise";
 import { CEPDados } from "../Components/CEPdados";
+import { Button, Container } from "../Styled";
 interface Error {
 	message: string;
 }
@@ -71,21 +72,30 @@ export function Pesquisa(props: any) {
 
 	return (
 		<>
-			<p>Qual CEP você deseja pesquisar?</p>
-			<InputMask
-				mask="99999-999"
-				value={cepNumber}
-				onChange={(event) => setCepNumber(numbersOnly(event.target.value))}
-				placeholder="00000-000"
-				required
-			/>
-			<button onClick={handleSearch}>CONSULTAR</button>
-			<button onClick={handleFavorite}>SALVAR FAVORITO</button>
-			<br />
-			<p>
-				<b>FAVORITO: </b> {cepFavorito}
-			</p>
-			<CEPDados cepDados={translate(cepDados)} />
+			<Container>
+				<div>
+					<h3>Qual CEP você deseja pesquisar?</h3>
+
+					<InputMask
+						mask="99999-999"
+						value={cepNumber}
+						onChange={(event) => setCepNumber(numbersOnly(event.target.value))}
+						placeholder="00000-000"
+						required
+					/>
+					<Button style={{ marginBottom: "10px" }} onClick={handleSearch}>
+						CONSULTAR
+					</Button>
+					<br />
+					<Button onClick={handleFavorite}>SALVAR FAVORITO</Button>
+					<br />
+					<section>
+						<b>FAVORITO: </b> {cepFavorito}
+					</section>
+
+					<CEPDados cepDados={translate(cepDados)} />
+				</div>
+			</Container>
 		</>
 	);
 }

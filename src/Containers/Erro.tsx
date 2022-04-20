@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import { Button, Container } from "../Styled";
 
 interface Error {
 	errorMessage: string;
@@ -8,10 +9,14 @@ interface Error {
 export function Erro(props: Error) {
 	return (
 		<>
-			<p>{props.errorMessage}</p>
-			<Link to={"/"}>
-				<button>NOVA CONSULTA</button>
-			</Link>
+			<Container>
+				<div>
+					<h3>{props.errorMessage}</h3>
+					<Link to={"/"}>
+						<Button>NOVA CONSULTA</Button>
+					</Link>
+				</div>
+			</Container>
 		</>
 	);
 }
