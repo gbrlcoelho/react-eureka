@@ -5,14 +5,16 @@ import { Carregando } from "./Containers/Carregando";
 import { Erro } from "./Containers/Erro";
 import { Route, Routes } from "react-router-dom";
 import { useState } from "react";
+import { Header } from "./Components/Header";
 
 function App() {
 	const [resultado, setResultado] = useState<object>({});
 	const [errorMessage, setErrorMessage] = useState<string>("");
 
 	return (
-		<div className="App">
-			<div className="App-header">
+		<>
+			<body>
+				<Header />
 				<Routes>
 					<Route
 						path="/"
@@ -27,8 +29,8 @@ function App() {
 					<Route path="/loading" element={<Carregando />} />
 					<Route path="/erro" element={<Erro errorMessage={errorMessage} />} />
 				</Routes>
-			</div>
-		</div>
+			</body>
+		</>
 	);
 }
 
