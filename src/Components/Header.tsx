@@ -5,7 +5,7 @@ export function Header() {
 	return (
 		<>
 			<EurekaHeader>
-				<img src={Logo} alt="logo" />
+				<img style={{ width: "300px" }} src={Logo} alt="logo" />
 			</EurekaHeader>
 		</>
 	);
