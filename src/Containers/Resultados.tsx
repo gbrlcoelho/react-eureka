@@ -3,7 +3,11 @@ import { Link } from "react-router-dom";
 import { CEPDados } from "../Components/CEPdados";
 import { Container, PrimaryButton } from "../Styled";
 
-export function Resultados(props: any) {
+interface ResultProps {
+	result: object;
+}
+
+export function Resultados(props: ResultProps) {
 	const result = props.result;
 	return (
 		<>
