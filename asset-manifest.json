@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/react-eureka/static/css/main.9ffbcc08.css",
+    "main.js": "/react-eureka/static/js/main.058ce7b7.js",
+    "static/media/logo.png": "/react-eureka/static/media/logo.aa7fa3d68599d4a54166.png",
+    "index.html": "/react-eureka/index.html",
+    "main.9ffbcc08.css.map": "/react-eureka/static/css/main.9ffbcc08.css.map",
+    "main.058ce7b7.js.map": "/react-eureka/static/js/main.058ce7b7.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9ffbcc08.css",
+    "static/js/main.058ce7b7.js"
+  ]
+}
